@@ -1,0 +1,117 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #000000;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+#app {
+    width: 100%;
+    max-width: 640px;
+    padding: 48px 24px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.form label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 12px;
+}
+
+.form .optional {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form input {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: inherit;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#submit {
+    margin-top: 24px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4caf50;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#submit:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.result {
+    margin-top: 32px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+.result.hidden {
+    display: none;
+}
+
+.result.success {
+    border-color: #4caf50;
+}
+
+.result.failure {
+    border-color: #f44336;
+}
+
+.result h2 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.result .temp {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 8px 0;
+}
+
+.result .detail {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}

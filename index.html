@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zip Code Weather</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main id="app">
+  <h1 class="title">Zip Code Weather</h1>
+  <p class="subtitle">Enter a 5-digit US zip code to get the current forecast.</p>
+
+  <form id="weather-form" class="form">
+    <label for="zip">Zip code</label>
+    <input id="zip" name="zip" type="text" inputmode="numeric" pattern="\d{5}" maxlength="5" placeholder="94103" required />
+
+    <button id="submit" type="submit">Get weather</button>
+  </form>
+
+  <section id="result" class="result hidden">
+    <h2 id="result-title"></h2>
+    <p id="result-temp" class="temp"></p>
+    <p id="result-short"></p>
+    <p id="result-wind"></p>
+    <p id="result-detail" class="detail"></p>
+  </section>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
